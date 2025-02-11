@@ -61,8 +61,7 @@ useEffect(() => {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    <p className="mb-0">                {Condidat?.adresse}
-</p>   
+                    <p className="mb-0">{Condidat?.adresse}</p>   
                   </div>
                 </li>
                 <li className="mb-2">
@@ -121,25 +120,25 @@ useEffect(() => {
               </ul>
               <div className="profile-content tab-content">
                 <div id="profile1" className="tab-pane fade active show">
-  <div className="row">
-    <div className="col-lg-6">
-      <ul className="list-inline p-0 m-0">
-        {Condidat?.skills?.map((skill, index) => (
-          <li className="mb-4" key={index}>
-            <div className="d-flex align-items-center pt-2">
-              <div className="ml-3 w-100">
-                <div className="media align-items-center justify-content-between">
-                  <p className="mb-0">{skill.nom}</p>
-                  <h6>{skill.niveauRequis}</h6> {/* Affiche le niveau requis de la compétence */}
-                </div>
-              </div>
+                  <div className="row">
+                    <div className="col-lg-6">
+                      <ul className="list-inline p-0 m-0">
+                        {Condidat?.skills?.map((skill, index) => (
+                          <li className="mb-4" key={index}>
+                            <div className="d-flex align-items-center pt-2">
+                              <div className="ml-3 w-100">
+                                <div className="media align-items-center justify-content-between">
+                                  <p className="mb-0">{skill.nom}</p>
+                                  <h6>{skill.niveauRequis}</h6> {/* Affiche le niveau requis de la compétence */}
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
             </div>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </div>
-</div>
 
                 <div id="profile2" className="tab-pane fade">
                   <div className="row">

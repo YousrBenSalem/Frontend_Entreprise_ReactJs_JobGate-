@@ -218,7 +218,7 @@ const Offres = () => {
                     <div className="iq-media-group">
                       <a href="#" className="iq-media">
                         <img className="img-fluid avatar-40 rounded-circle" src={item?.condidatId && item?.condidatId[0] && item?.condidatId[0]?.image 
-                      ? `hhttp://localhost:3000/file/${item?.condidatId[0]?.image}`: "../assets/images/user/05.jpg"} alt ="condidat Image" />
+                      ? `http://localhost:3000/file/${item?.condidatId[0]?.image}`: "../assets/images/user/05.jpg"} alt ="condidat Image" />
                       </a>
                       <a href="#" className="iq-media">
                         <img className="img-fluid avatar-40 rounded-circle" src={item?.condidatId && item?.condidatId[1] && item?.condidatId[1]?.image 

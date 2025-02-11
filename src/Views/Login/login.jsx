@@ -30,7 +30,7 @@ const Login = () => {
     console.log("Valeur normalisée de user.status :", UserStatus);
     console.log("Valeur de user.verify :", UserVerify);
 
-    if (itemType === "entreprise" && UserVerify === true ) {
+    if (itemType === "entreprise" && UserVerify === true && UserVerify === "Acceptable" ) {
       alert("Authentifiée avec succès !");
       const userData = {
         user: {
